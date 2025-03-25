@@ -1,0 +1,291 @@
+definitions:
+  db.Category:
+    properties:
+      category_id:
+        type: integer
+      category_name:
+        type: string
+    required:
+    - category_name
+    type: object
+  db.Event:
+    properties:
+      category:
+        type: integer
+      end_date:
+        type: string
+      event_id:
+        type: integer
+      location:
+        type: string
+      start_date:
+        type: string
+      title:
+        type: string
+    required:
+    - category
+    - end_date
+    - location
+    - start_date
+    - title
+    type: object
+  db.User:
+    properties:
+      email:
+        type: string
+      event_id:
+        type: integer
+      name:
+        type: string
+    required:
+    - email
+    - event_id
+    - name
+    type: object
+info:
+  contact: {}
+  title: Eventy
+  version: 1.00.
+paths:
+  /add_category:
+    post:
+      consumes:
+      - application/json
+      description: Add a new category to the database
+      parameters:
+      - description: Category data
+        in: body
+        name: category
+        required: true
+        schema:
+          $ref: '#/definitions/db.Category'
+      produces:
+      - application/json
+      responses: {}
+      summary: Add a new category
+      tags:
+      - Backoffice - Categories
+  /add_event:
+    post:
+      consumes:
+      - application/json
+      description: Add a new event to the database
+      parameters:
+      - description: Event data
+        in: body
+        name: event
+        required: true
+        schema:
+          $ref: '#/definitions/db.Event'
+      produces:
+      - application/json
+      responses: {}
+      summary: Add a new event
+      tags:
+      - Backoffice - Events
+  /add_user:
+    post:
+      consumes:
+      - application/json
+      description: Add a new user to the database
+      parameters:
+      - description: User data
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/db.User'
+      produces:
+      - application/json
+      responses: {}
+      summary: Add a new user
+      tags:
+      - Backoffice - Users
+  /delete_category/{category_id}:
+    delete:
+      description: Delete a category from the database
+      parameters:
+      - description: Category ID
+        in: path
+        name: category_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses: {}
+      summary: Delete a category
+      tags:
+      - Backoffice - Categories
+  /delete_event/{event_id}:
+    delete:
+      description: Delete an event from the database
+      parameters:
+      - description: Event ID
+        in: path
+        name: event_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses: {}
+      summary: Delete an event
+      tags:
+      - Backoffice - Events
+  /delete_user/{user_id}:
+    delete:
+      description: Delete a user from the database
+      parameters:
+      - description: User ID
+        in: path
+        name: user_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses: {}
+      summary: Delete a user
+      tags:
+      - Backoffice - Users
+  /get_categories:
+    get:
+      description: Get a list of all categories
+      parameters:
+      - description: Category ID
+        in: query
+        name: category_id
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: List of Categories
+          schema:
+            items:
+              $ref: '#/definitions/db.Category'
+            type: array
+      summary: Get all categories
+      tags:
+      - Backoffice - Categories
+  /get_events:
+    get:
+      description: Get a list of all events
+      parameters:
+      - description: Event ID
+        in: query
+        name: event_id
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: List of Events
+          schema:
+            items:
+              $ref: '#/definitions/db.Event'
+            type: array
+      summary: Get all events
+      tags:
+      - Backoffice - Events
+  /get_users:
+    get:
+      description: Get a list of all users
+      parameters:
+      - description: UserID
+        in: query
+        name: user_id
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: List of Users
+          schema:
+            items:
+              $ref: '#/definitions/db.User'
+            type: array
+      summary: Get all users
+      tags:
+      - Backoffice - Users
+  /update_category/{category_id}:
+    put:
+      consumes:
+      - application/json
+      description: Update an existing category in the database
+      parameters:
+      - description: Category ID
+        in: path
+        name: category_id
+        required: true
+        type: integer
+      - description: Updated category data
+        in: body
+        name: category
+        required: true
+        schema:
+          $ref: '#/definitions/db.Category'
+      produces:
+      - application/json
+      responses: {}
+      summary: Update a category
+      tags:
+      - Backoffice - Categories
+  /update_event/{event_id}:
+    put:
+      consumes:
+      - application/json
+      description: Update an existing event in the database
+      parameters:
+      - description: Event ID
+        in: path
+        name: event_id
+        required: true
+        type: integer
+      - description: Updated event data
+        in: body
+        name: event
+        required: true
+        schema:
+          $ref: '#/definitions/db.Event'
+      produces:
+      - application/json
+      responses: {}
+      summary: Update an event
+      tags:
+      - Backoffice - Events
+  /update_user/{user_id}:
+    put:
+      consumes:
+      - application/json
+      description: Update an existing user in the database
+      parameters:
+      - description: User ID
+        in: path
+        name: user_id
+        required: true
+        type: integer
+      - description: Updated user data
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/db.User'
+      produces:
+      - application/json
+      responses: {}
+      summary: Update a user
+      tags:
+      - Backoffice - Users
+securityDefinitions:
+  BearerAuth3rdParty:
+    description: 'Authorization token for third-party section (Ensure the token is
+      in this format: Bearer token)'
+    in: header
+    name: Authorization
+    type: apiKey
+  BearerAuthBackOffice:
+    description: 'Authorization token for back-office section (Ensure the token is
+      in this format: Bearer token)'
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

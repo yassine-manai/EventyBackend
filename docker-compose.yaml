@@ -1,0 +1,54 @@
+services:
+  eventy_backend:
+    image: yassinemanai/eventy_backend:1.0.0
+    container_name: eventy
+    environment:
+      SERVER_HOST: 0.0.0.0
+      SERVER_PORT: 5050
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: eventy
+      DB_PASSWORD: eventy
+      DB_NAME: eventy
+    restart: unless-stopped
+    ports:
+      - "5050:5050"
+    depends_on:
+      - db
+  
+  eventy_backoffice:
+    image: yassinemanai/formation:3.0
+    networks:
+      - app_network
+    restart: always
+    
+  nginx:
+    image: nginx:latest
+    ports:
+      - "5060:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro      
+    networks:
+      - app_network
+    depends_on:
+      - eventy_backend
+      - eventy_backoffice
+    restart: always
+
+  db:
+    image: postgres:16-alpine
+    container_name: db
+    environment:
+      POSTGRES_DB: eventy
+      POSTGRES_USER: eventy
+      POSTGRES_PASSWORD: eventy!
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    volumes:
+      - /data/fyc/database_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+networks:
+  app_network:
+      driver: bridge

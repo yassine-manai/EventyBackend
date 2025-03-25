@@ -1,0 +1,13 @@
+2025-03-09 16:17:17.70 | info | main.go:35 | ------------------------------ # STARTING APPLICATION # ------------------------------ | 
+2025-03-09 16:17:17.70 | info | main.go:39 | Server running on 0.0.0.0:5050  | 
+2025-03-09 16:17:17.70 | info | main.go:40 | Database connecting to 127.0.0.1:5432 | 
+2025-03-09 16:17:17.70 | debug | main.go:50 | ------------------------------- # CONNECT TO DATABASE # ------------------------------ | 
+2025-03-09 16:17:17.72 | info | main.go:56 | Successfully Connected to the Database. | Database =eventy
+2025-03-09 16:17:17.73 | info | main.go:68 | Tables Created successfully. | 
+2025-03-09 16:17:17.73 | debug | routes.go:28 | --------------------------  START ROUTING  ---------------------- | 
+2025-03-09 16:17:17.78 | info | main.go:79 | -------------------------------- # Server running on 0.0.0.0:5050 # ------------------------------ | 
+2025-03-09 16:17:28.98 | debug | user.go:98 | Updated user with ID: 2, rows affected: 1 | 
+2025-03-09 16:17:29.04 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-09 16:17:36.70 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-09 16:17:54.80 | debug | user.go:98 | Updated user with ID: 2, rows affected: 1 | 
+2025-03-09 16:17:54.87 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2

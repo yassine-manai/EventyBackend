@@ -1,0 +1,10 @@
+2025-03-09 16:01:22.05 | info | main.go:35 | ------------------------------ # STARTING APPLICATION # ------------------------------ | 
+2025-03-09 16:01:22.05 | info | main.go:39 | Server running on 0.0.0.0:5050  | 
+2025-03-09 16:01:22.05 | info | main.go:40 | Database connecting to 127.0.0.1:5432 | 
+2025-03-09 16:01:22.05 | debug | main.go:50 | ------------------------------- # CONNECT TO DATABASE # ------------------------------ | 
+2025-03-09 16:01:22.07 | info | main.go:56 | Successfully Connected to the Database. | Database =eventy
+2025-03-09 16:01:22.07 | info | main.go:68 | Tables Created successfully. | 
+2025-03-09 16:01:22.08 | debug | routes.go:28 | --------------------------  START ROUTING  ---------------------- | 
+2025-03-09 16:01:22.12 | info | main.go:79 | -------------------------------- # Server running on 0.0.0.0:5050 # ------------------------------ | 
+2025-03-09 16:01:41.94 | error | user_backoffice.go:246 | Error occured | error=error updating user with ID 2: ERROR: syntax error at or near "WHERE" (SQLSTATE=42601)
+2025-03-09 16:03:59.40 | error | user_backoffice.go:246 | Error occured | error=error updating user with ID 2: ERROR: syntax error at or near "WHERE" (SQLSTATE=42601)

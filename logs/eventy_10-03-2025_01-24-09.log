@@ -1,0 +1,62 @@
+2025-03-10 01:24:09.54 | info | main.go:35 | ------------------------------ # STARTING APPLICATION # ------------------------------ | 
+2025-03-10 01:24:09.54 | info | main.go:39 | Server running on 0.0.0.0:5050  | 
+2025-03-10 01:24:09.54 | info | main.go:40 | Database connecting to 127.0.0.1:5432 | 
+2025-03-10 01:24:09.54 | debug | main.go:50 | ------------------------------- # CONNECT TO DATABASE # ------------------------------ | 
+2025-03-10 01:24:09.56 | info | main.go:56 | Successfully Connected to the Database. | Database =eventy
+2025-03-10 01:24:09.57 | info | main.go:68 | Tables Created successfully. | 
+2025-03-10 01:24:09.57 | debug | routes.go:28 | --------------------------  START ROUTING  ---------------------- | 
+2025-03-10 01:24:09.58 | info | main.go:79 | -------------------------------- # Server running on 0.0.0.0:5050 # ------------------------------ | 
+2025-03-10 01:24:54.72 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=3
+2025-03-10 01:24:58.25 | debug | users_3rdParty.go:22 |  | BookEventHandler API request =map[event_id:2 user_id:13]
+2025-03-10 01:24:58.25 | info | event.go:61 | Starting booking process for Event ID: 2, User ID: 13 | 
+2025-03-10 01:24:58.26 | debug | event.go:73 | Fetched event: 2 | 
+2025-03-10 01:24:58.26 | debug | event.go:83 | Event capacity: 2, Current users: 0 | 
+2025-03-10 01:24:58.26 | info | event.go:91 | Added User ID 13 to Event ID 2 | 
+2025-03-10 01:24:58.26 | info | event.go:103 | Updated Event ID 2 with new user list | 
+2025-03-10 01:24:58.27 | debug | event.go:115 | Fetched user: {BaseModel:{} UserID:13 Email:yass@gmail.com Password:yassine Name:Yassine Is_guest:false EventID:[2 1 1] BookedEvents:[] Balance:-230} | 
+2025-03-10 01:24:58.27 | info | event.go:119 | Added Event ID 2 to User ID 13 | 
+2025-03-10 01:24:58.28 | info | event.go:131 | Updated User ID 13 with new event list | 
+2025-03-10 01:24:58.28 | info | event.go:135 | Successfully booked User ID 13 for Event ID 2, Rows Affected: 1 | 
+2025-03-10 01:24:58.30 | debug | user.go:115 | Updated user with ID: 13, rows affected: 1 | 
+2025-03-10 01:25:47.88 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 01:26:21.92 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 01:28:08.70 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=3
+2025-03-10 01:28:26.03 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=2
+2025-03-10 01:28:36.92 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 01:28:36.92 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 01:36:49.73 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 01:36:49.73 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 01:37:58.22 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 01:37:58.22 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 01:38:21.13 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=2
+2025-03-10 01:38:51.84 | debug | user.go:98 | Updated user with ID: 13, rows affected: 1 | 
+2025-03-10 01:38:51.86 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 01:38:51.97 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 01:38:56.24 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=3
+2025-03-10 01:39:00.97 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=2
+2025-03-10 01:51:35.70 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 01:51:35.70 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 01:54:33.22 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 01:54:33.22 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 02:03:48.07 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 02:03:49.96 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 02:03:53.44 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 02:03:54.61 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 02:04:40.94 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 02:04:43.08 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 02:04:45.06 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 02:05:07.74 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 02:05:09.13 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 02:05:10.85 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 02:05:19.55 | debug | user.go:98 | Updated user with ID: 13, rows affected: 1 | 
+2025-03-10 02:05:19.62 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 02:05:19.76 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-03-10 08:42:21.84 | debug | category.go:65 | Deleted category with ID: 3, rows affected: 1 | 
+2025-03-10 08:42:33.79 | debug | guest_backoffice.go:37 | No data found | Guest List=0
+2025-03-10 08:42:33.79 | debug | guest_backoffice.go:37 | No data found | Guest List=0
+2025-03-10 08:42:37.15 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=1
+2025-03-10 08:42:37.16 | debug | user_backoffice.go:30 | Get User by ID API request | UserID=13
+2025-03-10 08:42:37.16 | debug | user_backoffice.go:30 | Get User by ID API request | UserID=1
+2025-03-10 08:42:37.16 | warn | user_backoffice.go:33 | Error retrieving User ID | UserID=1 error=error getting user by ID 1: sql: no rows in result set
+2025-03-10 08:42:42.09 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=2
+2025-03-10 08:42:42.10 | debug | user_backoffice.go:30 | Get User by ID API request | UserID=13

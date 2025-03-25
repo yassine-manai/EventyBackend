@@ -1,0 +1,29 @@
+2025-03-09 22:45:04.79 | info | main.go:35 | ------------------------------ # STARTING APPLICATION # ------------------------------ | 
+2025-03-09 22:45:04.79 | info | main.go:39 | Server running on 0.0.0.0:5050  | 
+2025-03-09 22:45:04.79 | info | main.go:40 | Database connecting to 127.0.0.1:5432 | 
+2025-03-09 22:45:04.79 | debug | main.go:50 | ------------------------------- # CONNECT TO DATABASE # ------------------------------ | 
+2025-03-09 22:45:04.97 | info | main.go:56 | Successfully Connected to the Database. | Database =eventy
+2025-03-09 22:45:04.98 | info | main.go:68 | Tables Created successfully. | 
+2025-03-09 22:45:04.98 | debug | routes.go:28 | --------------------------  START ROUTING  ---------------------- | 
+2025-03-09 22:45:04.99 | info | main.go:79 | -------------------------------- # Server running on 0.0.0.0:5050 # ------------------------------ | 
+2025-03-09 22:48:15.63 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=3
+2025-03-09 22:48:20.41 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-09 22:48:39.83 | debug | user.go:98 | Updated user with ID: 2, rows affected: 1 | 
+2025-03-09 22:48:39.89 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-09 22:52:12.51 | warn | user_mngmt.go:89 | Invalid User ID | error=strconv.Atoi: parsing "": invalid syntax UserID=
+2025-03-09 23:51:43.98 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=2
+2025-03-09 23:59:40.79 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 00:00:46.01 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 00:02:06.25 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 00:15:20.59 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 00:15:28.29 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 00:18:29.36 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 00:18:40.65 | debug | user.go:98 | Updated user with ID: 2, rows affected: 1 | 
+2025-03-10 00:18:40.84 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 00:18:41.11 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 00:18:50.67 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 00:26:07.93 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 00:26:07.93 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 00:50:36.87 | debug | user.go:98 | Updated user with ID: 2, rows affected: 1 | 
+2025-03-10 00:50:36.96 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
+2025-03-10 00:50:37.04 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=2
