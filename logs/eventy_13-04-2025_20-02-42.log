@@ -1,0 +1,13 @@
+2025-04-13 20:02:42.54 | info | main.go:34 | ------------------------------ # STARTING APPLICATION # ------------------------------ | 
+2025-04-13 20:02:42.55 | info | main.go:38 | Server running on 0.0.0.0:5050  | 
+2025-04-13 20:02:42.55 | info | main.go:39 | Database connecting to 127.0.0.1:5432 | 
+2025-04-13 20:02:42.55 | debug | main.go:49 | ------------------------------- # CONNECT TO DATABASE # ------------------------------ | 
+2025-04-13 20:02:42.6 | info | main.go:55 | Successfully Connected to the Database. | Database =eventy
+2025-04-13 20:02:42.60 | info | main.go:67 | Tables Created successfully. | 
+2025-04-13 20:02:42.61 | debug | routes.go:28 | --------------------------  START ROUTING  ---------------------- | 
+2025-04-13 20:02:42.63 | info | main.go:77 | -------------------------------- # Server running on 0.0.0.0:5050 # ------------------------------ | 
+2025-04-13 20:02:46.01 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 20:02:46.38 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=1
+2025-04-13 20:03:11.16 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 20:03:13.10 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 20:06:22.31 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13

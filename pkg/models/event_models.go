@@ -13,7 +13,8 @@ type Event struct {
 	Location      string `bun:"location" json:"location" binding:"required"`
 	Image         string `bun:"image,type:bytea" json:"image"`
 	Category      int    `bun:"category" json:"category" binding:"required"`
-	Capacity      int    `bun:"capacity" json:"capacity" binding:"required"`
+	MinCapacity   int    `bun:"min_capacity" json:"min_capacity" binding:"required"`
+	MaxCapacity   int    `bun:"max_capacity" json:"max_capacity" binding:"required"`
 	IsArchived    bool   `bun:"isArchived" json:"isArchived"`
 	Price         int    `bun:"price" json:"price" binding:"required"`
 	UserID        []int  `bun:"user_id,array" json:"user_id" `
@@ -27,7 +28,8 @@ type EventNoBind struct {
 	EndDate       string `bun:"end_date" json:"end_date"`
 	Location      string `bun:"location" json:"location"`
 	Image         string `bun:"image,type:bytea" json:"image"`
-	Capacity      int    `bun:"capacity" json:"capacity"`
+	MinCapacity   int    `bun:"min_capacity" json:"min_capacity"`
+	MaxCapacity   int    `bun:"max_capacity" json:"max_capacity"`
 	IsArchived    bool   `bun:"isArchived" json:"isArchived"`
 	Category      int    `bun:"category" json:"category"`
 	Price         int    `bun:"price" json:"price"`

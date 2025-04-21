@@ -1,0 +1,38 @@
+2025-04-14 14:17:48.55 | info | main.go:34 | ------------------------------ # STARTING APPLICATION # ------------------------------ | 
+2025-04-14 14:17:48.55 | info | main.go:38 | Server running on 0.0.0.0:5050  | 
+2025-04-14 14:17:48.56 | info | main.go:39 | Database connecting to 127.0.0.1:5432 | 
+2025-04-14 14:17:48.57 | debug | main.go:49 | ------------------------------- # CONNECT TO DATABASE # ------------------------------ | 
+2025-04-14 14:17:48.68 | info | main.go:55 | Successfully Connected to the Database. | Database =eventy
+2025-04-14 14:17:48.68 | info | main.go:67 | Tables Created successfully. | 
+2025-04-14 14:17:48.69 | debug | routes.go:28 | --------------------------  START ROUTING  ---------------------- | 
+2025-04-14 14:17:48.76 | info | main.go:77 | -------------------------------- # Server running on 0.0.0.0:5050 # ------------------------------ | 
+2025-04-14 14:18:50.54 | debug | user.go:136 | New user added with Email: yass@gmail.com | 
+2025-04-14 14:18:50.70 | debug | user_backoffice.go:54 | No data found | User List=0
+2025-04-14 14:18:59.28 | debug | user_backoffice.go:54 | No data found | User List=0
+2025-04-14 14:18:59.29 | debug | user_backoffice.go:54 | No data found | User List=0
+2025-04-14 14:19:47.20 | debug | user.go:226 | Updated user with ID: 13, rows affected: 1 | 
+2025-04-14 14:19:47.4 | debug | guest_backoffice.go:37 | No data found | Guest List=0
+2025-04-14 14:21:08.47 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=4
+2025-04-14 14:21:47.52 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=4
+2025-04-14 14:22:01.61 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=2
+2025-04-14 14:24:27.22 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=4
+2025-04-14 14:24:33.24 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=4
+2025-04-14 14:24:38.28 | debug | users_3rdParty.go:22 |  | BookEventHandler API request =map[event_id:1 user_id:13]
+2025-04-14 14:24:38.28 | info | event.go:61 | Starting booking process for Event ID: 1, User ID: 13 | 
+2025-04-14 14:24:38.28 | debug | event.go:73 | Fetched event: 1 | 
+2025-04-14 14:24:38.28 | debug | event.go:83 | Event capacity: 300, Current users: 0 | 
+2025-04-14 14:24:38.28 | info | event.go:91 | Added User ID 13 to Event ID 1 | 
+2025-04-14 14:24:38.29 | info | event.go:103 | Updated Event ID 1 with new user list | 
+2025-04-14 14:24:38.29 | debug | event.go:115 | Fetched user: {BaseModel:{} UserID:13 Email:yass@gmail.com Password:useruser Name:Yassine Is_guest:false EventID:[] BookedEvents:[] Balance:100} | 
+2025-04-14 14:24:38.3 | info | event.go:119 | Added Event ID 1 to User ID 13 | 
+2025-04-14 14:24:38.30 | info | event.go:131 | Updated User ID 13 with new event list | 
+2025-04-14 14:24:38.30 | info | event.go:135 | Successfully booked User ID 13 for Event ID 1, Rows Affected: 1 | 
+2025-04-14 14:24:38.31 | debug | user.go:186 | Updated user with ID: 13, rows affected: 1 | 
+2025-04-14 14:24:52.72 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=4
+2025-04-14 14:24:58.48 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-14 14:25:16.66 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-14 14:25:28.44 | debug | user.go:169 | Updated user with ID: 13, rows affected: 1 | 
+2025-04-14 14:25:28.67 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-14 14:25:29.13 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-14 14:25:54.39 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-14 14:26:07.66 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=4

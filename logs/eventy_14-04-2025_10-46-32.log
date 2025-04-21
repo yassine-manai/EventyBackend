@@ -1,0 +1,17 @@
+2025-04-14 10:46:32.68 | info | main.go:34 | ------------------------------ # STARTING APPLICATION # ------------------------------ | 
+2025-04-14 10:46:32.68 | info | main.go:38 | Server running on 0.0.0.0:5050  | 
+2025-04-14 10:46:32.68 | info | main.go:39 | Database connecting to 127.0.0.1:5432 | 
+2025-04-14 10:46:32.68 | debug | main.go:49 | ------------------------------- # CONNECT TO DATABASE # ------------------------------ | 
+2025-04-14 10:46:32.70 | info | main.go:55 | Successfully Connected to the Database. | Database =eventy
+2025-04-14 10:46:32.72 | info | main.go:67 | Tables Created successfully. | 
+2025-04-14 10:46:32.72 | debug | routes.go:28 | --------------------------  START ROUTING  ---------------------- | 
+2025-04-14 10:46:32.77 | info | main.go:77 | -------------------------------- # Server running on 0.0.0.0:5050 # ------------------------------ | 
+2025-04-14 10:50:24.01 | debug | event.go:39 | New event added with ID: 2 | 
+2025-04-14 10:51:46.48 | debug | event.go:39 | New event added with ID: 3 | 
+2025-04-14 10:52:39.29 | warn | event_backoffice.go:76 | Invalid request payload | error=Key: 'Event.Price' Error:Field validation for 'Price' failed on the 'required' tag
+2025-04-14 10:52:42.88 | warn | event_backoffice.go:76 | Invalid request payload | error=Key: 'Event.Price' Error:Field validation for 'Price' failed on the 'required' tag
+2025-04-14 10:52:54.35 | debug | event.go:39 | New event added with ID: 4 | 
+2025-04-14 10:57:07.71 | debug | guest_backoffice.go:37 | No data found | Guest List=0
+2025-04-14 10:57:07.72 | debug | guest_backoffice.go:37 | No data found | Guest List=0
+2025-04-14 10:57:51.36 | debug | user.go:198 | Deleted user with ID: 13, rows affected: 1 | 
+2025-04-14 10:57:51.37 | debug | user_backoffice.go:54 | No data found | User List=0

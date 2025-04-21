@@ -1,8 +1,0 @@
-2025-03-10 01:02:19.36 | info | main.go:35 | ------------------------------ # STARTING APPLICATION # ------------------------------ | 
-2025-03-10 01:02:19.37 | info | main.go:39 | Server running on 0.0.0.0:5050  | 
-2025-03-10 01:02:19.37 | info | main.go:40 | Database connecting to 127.0.0.1:5432 | 
-2025-03-10 01:02:19.37 | debug | main.go:50 | ------------------------------- # CONNECT TO DATABASE # ------------------------------ | 
-2025-03-10 01:02:19.39 | info | main.go:56 | Successfully Connected to the Database. | Database =eventy
-2025-03-10 01:02:19.40 | info | main.go:68 | Tables Created successfully. | 
-2025-03-10 01:02:19.40 | debug | routes.go:28 | --------------------------  START ROUTING  ---------------------- | 
-2025-03-10 01:02:19.41 | info | main.go:79 | -------------------------------- # Server running on 0.0.0.0:5050 # ------------------------------ | 

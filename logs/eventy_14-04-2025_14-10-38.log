@@ -1,0 +1,18 @@
+2025-04-14 14:10:38.23 | info | main.go:34 | ------------------------------ # STARTING APPLICATION # ------------------------------ | 
+2025-04-14 14:10:38.23 | info | main.go:38 | Server running on 0.0.0.0:5050  | 
+2025-04-14 14:10:38.23 | info | main.go:39 | Database connecting to 127.0.0.1:5432 | 
+2025-04-14 14:10:38.23 | debug | main.go:49 | ------------------------------- # CONNECT TO DATABASE # ------------------------------ | 
+2025-04-14 14:10:38.30 | info | main.go:55 | Successfully Connected to the Database. | Database =eventy
+2025-04-14 14:10:38.34 | info | main.go:67 | Tables Created successfully. | 
+2025-04-14 14:10:38.35 | debug | routes.go:28 | --------------------------  START ROUTING  ---------------------- | 
+2025-04-14 14:10:38.44 | info | main.go:77 | -------------------------------- # Server running on 0.0.0.0:5050 # ------------------------------ | 
+2025-04-14 14:10:41.28 | debug | user_mngmt.go:50 | Register API request | 
+2025-04-14 14:10:41.32 | debug | user.go:136 | New user added with Email: kh2@gmail.com | 
+2025-04-14 14:11:19.14 | debug | user.go:226 | Updated user with ID: 13, rows affected: 3 | 
+2025-04-14 14:11:19.28 | debug | guest_backoffice.go:37 | No data found | Guest List=0
+2025-04-14 14:11:54.88 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=4
+2025-04-14 14:12:06.12 | debug | guest_backoffice.go:37 | No data found | Guest List=0
+2025-04-14 14:12:06.12 | debug | guest_backoffice.go:37 | No data found | Guest List=0
+2025-04-14 14:12:06.81 | debug | guest_backoffice.go:37 | No data found | Guest List=0
+2025-04-14 14:12:12.24 | debug | user.go:198 | Deleted user with ID: 13, rows affected: 3 | 
+2025-04-14 14:12:12.43 | debug | user_backoffice.go:54 | No data found | User List=0

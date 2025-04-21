@@ -1,0 +1,47 @@
+2025-04-13 19:16:29.67 | info | main.go:34 | ------------------------------ # STARTING APPLICATION # ------------------------------ | 
+2025-04-13 19:16:29.67 | info | main.go:38 | Server running on 0.0.0.0:5050  | 
+2025-04-13 19:16:29.67 | info | main.go:39 | Database connecting to 127.0.0.1:5432 | 
+2025-04-13 19:16:29.67 | debug | main.go:49 | ------------------------------- # CONNECT TO DATABASE # ------------------------------ | 
+2025-04-13 19:16:29.71 | info | main.go:55 | Successfully Connected to the Database. | Database =eventy
+2025-04-13 19:16:29.73 | info | main.go:67 | Tables Created successfully. | 
+2025-04-13 19:16:29.73 | debug | routes.go:28 | --------------------------  START ROUTING  ---------------------- | 
+2025-04-13 19:16:29.74 | info | main.go:77 | -------------------------------- # Server running on 0.0.0.0:5050 # ------------------------------ | 
+2025-04-13 19:16:40.98 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 19:16:42.45 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 19:16:43.13 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=2
+2025-04-13 19:16:43.26 | warn | event_backoffice.go:33 | Error retrieving Event ID | error=error getting event by ID 2: sql: no rows in result set EventID=2
+2025-04-13 19:16:43.31 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=1
+2025-04-13 19:18:55.08 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 19:18:55.41 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=2
+2025-04-13 19:18:55.44 | warn | event_backoffice.go:33 | Error retrieving Event ID | error=error getting event by ID 2: sql: no rows in result set EventID=2
+2025-04-13 19:18:55.56 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=1
+2025-04-13 19:19:54.65 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 19:19:54.83 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=2
+2025-04-13 19:19:54.98 | warn | event_backoffice.go:33 | Error retrieving Event ID | error=error getting event by ID 2: sql: no rows in result set EventID=2
+2025-04-13 19:19:55.16 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=1
+2025-04-13 19:27:55.24 | debug | category_backoffice.go:30 | Get Category by ID API request | CategoryID=4
+2025-04-13 19:27:58.64 | debug | users_3rdParty.go:22 |  | BookEventHandler API request =map[event_id:1 user_id:13]
+2025-04-13 19:27:58.65 | info | event.go:61 | Starting booking process for Event ID: 1, User ID: 13 | 
+2025-04-13 19:27:58.66 | debug | event.go:73 | Fetched event: 1 | 
+2025-04-13 19:27:58.66 | debug | event.go:83 | Event capacity: 300, Current users: 0 | 
+2025-04-13 19:27:58.66 | info | event.go:91 | Added User ID 13 to Event ID 1 | 
+2025-04-13 19:27:58.74 | info | event.go:103 | Updated Event ID 1 with new user list | 
+2025-04-13 19:27:58.75 | debug | event.go:115 | Fetched user: {BaseModel:{} UserID:13 Email:yass@gmail.com Password:yassine Name:Yassine Is_guest:false EventID:[2 1 1 2 1] BookedEvents:[] Balance:780} | 
+2025-04-13 19:27:58.75 | info | event.go:119 | Added Event ID 1 to User ID 13 | 
+2025-04-13 19:27:58.76 | info | event.go:131 | Updated User ID 13 with new event list | 
+2025-04-13 19:27:58.77 | info | event.go:135 | Successfully booked User ID 13 for Event ID 1, Rows Affected: 1 | 
+2025-04-13 19:27:58.82 | debug | user.go:147 | Updated user with ID: 13, rows affected: 1 | 
+2025-04-13 19:28:08.94 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 19:30:52.7 | debug | user.go:130 | Updated user with ID: 13, rows affected: 1 | 
+2025-04-13 19:30:52.81 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 19:30:52.93 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 19:31:56.80 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 19:32:13.77 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 19:36:23.44 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 19:36:24.82 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=2
+2025-04-13 19:36:25.87 | warn | event_backoffice.go:33 | Error retrieving Event ID | error=error getting event by ID 2: sql: no rows in result set EventID=2
+2025-04-13 19:36:25.94 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=1
+2025-04-13 19:36:33.44 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 19:36:33.61 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=2
+2025-04-13 19:36:33.81 | warn | event_backoffice.go:33 | Error retrieving Event ID | error=error getting event by ID 2: sql: no rows in result set EventID=2
+2025-04-13 19:36:33.83 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=1

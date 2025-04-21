@@ -1,0 +1,16 @@
+2025-04-13 19:12:28.32 | info | main.go:34 | ------------------------------ # STARTING APPLICATION # ------------------------------ | 
+2025-04-13 19:12:28.32 | info | main.go:38 | Server running on 0.0.0.0:5050  | 
+2025-04-13 19:12:28.32 | info | main.go:39 | Database connecting to 127.0.0.1:5432 | 
+2025-04-13 19:12:28.32 | debug | main.go:49 | ------------------------------- # CONNECT TO DATABASE # ------------------------------ | 
+2025-04-13 19:12:28.39 | info | main.go:55 | Successfully Connected to the Database. | Database =eventy
+2025-04-13 19:12:28.43 | info | main.go:67 | Tables Created successfully. | 
+2025-04-13 19:12:28.43 | debug | routes.go:28 | --------------------------  START ROUTING  ---------------------- | 
+2025-04-13 19:12:28.43 | info | main.go:77 | -------------------------------- # Server running on 0.0.0.0:5050 # ------------------------------ | 
+2025-04-13 19:15:17.66 | debug | user_mngmt.go:145 | Get User by ID API mobile request | UserID=13
+2025-04-13 19:15:17.83 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=2
+2025-04-13 19:15:18.00 | warn | event_backoffice.go:33 | Error retrieving Event ID | EventID=2 error=error getting event by ID 2: sql: no rows in result set
+2025-04-13 19:15:18.13 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=1
+2025-04-13 19:15:18.28 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=1
+2025-04-13 19:15:18.61 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=2
+2025-04-13 19:15:18.69 | warn | event_backoffice.go:33 | Error retrieving Event ID | error=error getting event by ID 2: sql: no rows in result set EventID=2
+2025-04-13 19:15:18.79 | debug | event_backoffice.go:30 | Get Event by ID API request | EventID=1

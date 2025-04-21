@@ -80,9 +80,9 @@ func BookEvent(ctx context.Context, id int, userID int) (int64, error) {
 		}
 	}
 
-	log.Debug().Msgf("Event capacity: %d, Current users: %d", event.Capacity, len(event.UserID))
-	if len(event.UserID) >= event.Capacity {
-		log.Warn().Msgf("Event ID %d is full. Capacity: %d", id, event.Capacity)
+	log.Debug().Msgf("Event capacity: %d, Current users: %d", event.MaxCapacity, len(event.UserID))
+	if len(event.UserID) >= event.MaxCapacity {
+		log.Warn().Msgf("Event ID %d is full. Capacity: %d", id, event.MaxCapacity)
 		return 0, fmt.Errorf("event is full")
 	}
 
